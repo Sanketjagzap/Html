@@ -805,3 +805,124 @@ Q10.
           <label for="fname">First Name</label>
           <input type="text" id="fname" name="fname">
     
+Q11.Amazon
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amazon Clone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Amazon</div>
+    <input type="text" class="search-bar" placeholder="Search Amazon" />
+    <div class="nav-links">
+      <span>Sign In</span>
+      <span>Orders</span>
+      <span>Cart</span>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2>Welcome to Amazon</h2>
+  </section>
+
+  <main class="products">
+    <div class="product">
+      <img src="https://via.placeholder.com/150" alt="Product 1" />
+      <h3>Product 1</h3>
+      <p>$19.99</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/150" alt="Product 2" />
+      <h3>Product 2</h3>
+      <p>$29.99</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/150" alt="Product 3" />
+      <h3>Product 3</h3>
+      <p>$39.99</p>
+      <button>Add to Cart</button>
+    </div>
+  </main>
+</body>
+</html>
+
+CSS
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #e3e6e6;
+}
+
+.navbar {
+  background-color: #131921;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.search-bar {
+  width: 50%;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+}
+
+.nav-links span {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.banner {
+  background-color: #f3a847;
+  padding: 20px;
+  text-align: center;
+}
+
+.products {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.product {
+  background-color: white;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 10px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+}
+
+.product button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #ffd814;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
